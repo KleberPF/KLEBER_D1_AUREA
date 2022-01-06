@@ -18,7 +18,6 @@ const Home = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveGrid((prev) => {
-        console.log('Set Active Grid');
         return (prev + 1) % texts.length;
       });
     }, 2000 + 200 * 7);
@@ -28,7 +27,6 @@ const Home = () => {
 
   useEffect(() => {
     setAnimation((prev) => {
-      console.log('Set Animation 1');
       let newAnimation = [...prev];
       newAnimation[activeGrid] = '';
       return newAnimation;
@@ -36,7 +34,6 @@ const Home = () => {
     setTimeout(
       () =>
         setAnimation((prev) => {
-          console.log('Set Animation 2');
           let newAnimation = [...prev];
           newAnimation[activeGrid] = 'animate-after';
           return newAnimation;
