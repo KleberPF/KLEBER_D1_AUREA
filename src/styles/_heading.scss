@@ -9,6 +9,7 @@
   .text {
     font-size: 60px;
     font-weight: 600;
+    color: $headline;
   }
 
   .wrapper {
@@ -23,7 +24,7 @@
 
     .text {
       white-space: nowrap;
-      color: $red;
+      color: $paragraph;
 
       transition-duration: 1s;
     }

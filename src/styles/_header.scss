@@ -5,7 +5,7 @@ header {
   padding: 15px 28px 15px 24px;
 
   h3 {
-    color: $red;
+    color: $headline;
     font-size: 20px;
     font-weight: 700;
   }
@@ -23,7 +23,7 @@ header {
         a {
           text-decoration: none;
           font-size: 16px;
-          color: $black;
+          color: $button-text;
           font-weight: 700;
 
           &:hover {
@@ -53,7 +53,7 @@ header {
     }
     .login {
       color: $white;
-      background: $red;
+      background: $button;
     }
     .signup {
       margin-left: 16px;

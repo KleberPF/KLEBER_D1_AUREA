@@ -5,3 +5,7 @@
 @import './header';
 @import './heading';
 @import './grid';
+
+body {
+  background-color: $background;
+}

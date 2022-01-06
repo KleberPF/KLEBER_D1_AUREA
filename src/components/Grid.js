@@ -14,7 +14,6 @@ const Grid = ({ color = 'red', isActive = true, transition = '' }) => {
     });
   }, []);
 
-  let imageIndex = 0;
   return (
     <>
       {!loading && (
@@ -22,19 +21,17 @@ const Grid = ({ color = 'red', isActive = true, transition = '' }) => {
           {[...Array(7)].map((__, key1) => (
             <div className={`column ${transition}`} key={key1}>
               {[...Array(5)].map((___, key2) => {
-                const item = (
+                return (
                   <div key={key2}>
                     <img
                       className='item'
-                      src={images[imageIndex].download_url}
+                      src={images[key1 * 5 + key2].download_url}
                       width='236px'
                       height='350px'
                       alt=''
                     />
                   </div>
                 );
-                imageIndex++;
-                return item;
               })}
             </div>
           ))}
