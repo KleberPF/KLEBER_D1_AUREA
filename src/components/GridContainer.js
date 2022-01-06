@@ -13,6 +13,7 @@ const GridContainer = ({ activeGridIndex = 0, transition }) => {
           isActive={activeGridIndex === i}
           transition={transition[i]}
           key={i}
+          startingImage={i * 7 * 5}
         />
       ))}
     </div>
