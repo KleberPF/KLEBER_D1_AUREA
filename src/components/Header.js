@@ -7,13 +7,13 @@ const Header = () => {
       <nav>
         <ul>
           <li>
-            <a href='#'>Sobre</a>
+            <a href='https://google.com'>Sobre</a>
           </li>
           <li>
-            <a href='#'>Negócios</a>
+            <a href='https://google.com'>Negócios</a>
           </li>
           <li>
-            <a href='#'>Blog</a>
+            <a href='https://google.com'>Blog</a>
           </li>
         </ul>
 
