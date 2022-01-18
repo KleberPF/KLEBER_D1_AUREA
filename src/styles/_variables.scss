@@ -12,3 +12,8 @@ $button-text: #fffffe;
 // Timing
 $fade-duration: 1s;
 $columns-transition-delay: 0.2s;
+
+// Grid and elements sizes
+$column-width: calc(95vw / 7);
+$item-width: calc($column-width - 20px);
+$item-height: calc($item-width * 1.48);
